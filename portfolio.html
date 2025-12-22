@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - PixelPulse</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i> PixelPulse
+      </a>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-btn">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="badge">Our Work</span>
+      <h1>Portfolio</h1>
+      <p>Showcasing our best projects and success stories</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Filter -->
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="portfolio-grid-full">
+        <div class="portfolio-item-full" data-category="web design">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Analytics Dashboard">
+          <div class="portfolio-overlay">
+            <h3>Brand Analytics Dashboard</h3>
+            <p>Web Application | UI/UX Design</p>
+            <span class="portfolio-tag">Web</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="ecommerce">
+          <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop" alt="Fashion Store">
+          <div class="portfolio-overlay">
+            <h3>Luxury Fashion E-Commerce</h3>
+            <p>Online Store | Payment Integration</p>
+            <span class="portfolio-tag">E-Commerce</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Banking App">
+          <div class="portfolio-overlay">
+            <h3>Mobile Banking Application</h3>
+            <p>iOS & Android | Secure Transactions</p>
+            <span class="portfolio-tag">Mobile</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="web">
+          <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop" alt="Real Estate">
+          <div class="portfolio-overlay">
+            <h3>Real Estate Portal</h3>
+            <p>Property Listings | Advanced Search</p>
+            <span class="portfolio-tag">Web</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="design">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="UI Kit">
+          <div class="portfolio-overlay">
+            <h3>Modern UI Kit Design</h3>
+            <p>Design System | Components Library</p>
+            <span class="portfolio-tag">Design</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="ecommerce">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop" alt="Grocery Store">
+          <div class="portfolio-overlay">
+            <h3>Online Grocery Platform</h3>
+            <p>Multi-Vendor | Delivery Tracking</p>
+            <span class="portfolio-tag">E-Commerce</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="mobile web">
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="Fitness App">
+          <div class="portfolio-overlay">
+            <h3>Fitness Tracking App</h3>
+            <p>Wearable Integration | Health Metrics</p>
+            <span class="portfolio-tag">Mobile</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="web design">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Business Website">
+          <div class="portfolio-overlay">
+            <h3>Corporate Website Redesign</h3>
+            <p>Brand Identity | Content Management</p>
+            <span class="portfolio-tag">Web</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-full" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=800&h=600&fit=crop" alt="Food Delivery">
+          <div class="portfolio-overlay">
+            <h3>Food Delivery Platform</h3>
+            <p>Real-time Tracking | Order Management</p>
+            <span class="portfolio-tag">Mobile</span>
+            <a href="#" class="btn btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Client Feedback</span>
+        <h2>What Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"PixelPulse transformed our online presence completely. The e-commerce platform they built increased our sales by 250% in the first quarter."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client">
+            <div>
+              <h4>Jennifer Williams</h4>
+              <p>CEO, Fashion Hub</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"The mobile app they developed exceeded our expectations. User engagement is up 180% and the feedback has been overwhelmingly positive."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Client">
+            <div>
+              <h4>David Martinez</h4>
+              <p>Founder, FitLife</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Professional, creative, and results-driven. PixelPulse is the best digital agency we've worked with. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client">
+            <div>
+              <h4>Lisa Thompson</h4>
+              <p>Marketing Director, TechCorp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's create something amazing together</p>
+        <a href="contact.html" class="btn btn-light btn-lg">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3><i class="fas fa-bolt"></i> PixelPulse</h3>
+          <p>Transforming ideas into digital reality through innovation and excellence.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Website Development</a></li>
+            <li><a href="services.html">E-Commerce</a></li>
+            <li><a href="services.html">AI Integration</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> info@pixelpulse.world</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Digital Ave, Tech City</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 PixelPulse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
