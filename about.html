@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar">
@@ -31,11 +33,16 @@
   </nav>
 
   <!-- Page Header -->
-  <section class="page-header">
+  <section class="page-header"
+    style="background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1766843245/The_Board_Sets_the_Direction_Moreover_It_Sets_the_Tone_Boards_must_watch_on_the_shifting_nature_of_their_role_in_today_s_organizations_and_find_the_right_balance_between_governance_and_management__Greater_cnjldj.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="container">
       <span class="badge">About PixelPulse</span>
-      <h1>We Create Digital Excellence</h1>
-      <p>Passionate team dedicated to transforming businesses through technology</p>
+      <h1
+        style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(0,0,0,0.8); font-weight: bold;">
+        We Create Digital Excellence</h1>
+      <p
+        style="color: whitesmoke; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(0,0,0,0.8); font-weight: bold;">
+        Passionate team dedicated to transforming businesses through technology</p>
     </div>
   </section>
 
@@ -45,21 +52,27 @@
       <div class="about-intro">
         <div class="about-intro-content">
           <h2>Our Story</h2>
-          <p>Founded in 2015, PixelPulse has grown from a small startup to a leading digital agency, serving clients worldwide. Our journey began with a simple mission: to help businesses thrive in the digital age through innovative technology solutions.</p>
-          <p>Today, we're proud to have helped over 500 companies transform their digital presence, from startups to Fortune 500 enterprises. Our team of 50+ experts combines creativity, technical expertise, and strategic thinking to deliver exceptional results.</p>
+          <p>Founded in 2015, PixelPulse has grown from a small startup to a leading digital agency, serving clients
+            worldwide. Our journey began with a simple mission: to help businesses thrive in the digital age through
+            innovative technology solutions.</p>
+          <p>Today, we're proud to have helped over 500 companies transform their digital presence, from startups to
+            Fortune 500 enterprises. Our team of 50+ experts combines creativity, technical expertise, and strategic
+            thinking to deliver exceptional results.</p>
         </div>
         <div class="about-intro-image">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=500&fit=crop" alt="Team Meeting">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=500&fit=crop"
+            alt="Team Meeting">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Values -->
-  <section class="section section-alt">
+  <section class="section section-alt"
+    style="background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1766992662/Tips_on_how_to_make_video_clips_and_trim_your_dwell_streams_po1rxd.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="container">
       <div class="section-header center">
-        <span class="section-badge">Our Values</span>
+        <span class="section-badge" style="color: black;">Our Values</span>
         <h2>What Drives Us</h2>
       </div>
       <div class="values-grid">
@@ -68,14 +81,16 @@
             <i class="fas fa-lightbulb"></i>
           </div>
           <h3>Innovation</h3>
-          <p>We stay ahead of technology trends to deliver cutting-edge solutions that give our clients a competitive advantage.</p>
+          <p>We stay ahead of technology trends to deliver cutting-edge solutions that give our clients a competitive
+            advantage.</p>
         </div>
         <div class="value-card">
           <div class="value-icon">
             <i class="fas fa-users"></i>
           </div>
           <h3>Collaboration</h3>
-          <p>We believe in working closely with clients as partners, ensuring transparency and alignment throughout the project.</p>
+          <p>We believe in working closely with clients as partners, ensuring transparency and alignment throughout the
+            project.</p>
         </div>
         <div class="value-card">
           <div class="value-icon">
@@ -84,15 +99,84 @@
           <h3>Excellence</h3>
           <p>We're committed to delivering the highest quality in every project, no matter the size or complexity.</p>
         </div>
-        <div class="value-card">
-          <div class="value-icon">
-            <i class="fas fa-rocket"></i>
-          </div>
-          <h3>Results</h3>
-          <p>We focus on measurable outcomes that drive real business value and long-term success for our clients.</p>
-        </div>
+
       </div>
     </div>
+
+    <style>
+      .section-alt {
+        position: relative;
+      }
+
+      .section-alt::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+      }
+
+      .section-alt>* {
+        position: relative;
+        z-index: 1;
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .value-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+        border: 2px solid #e8eef7;
+        border-radius: 12px;
+        padding: 2.5rem;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .value-card:hover {
+        transform: translateY(-8px);
+        border-color: #6366f1;
+        box-shadow: 0 12px 30px rgba(99, 102, 241, 0.2);
+        background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+      }
+
+      .value-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 1.5rem;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        transition: all 0.3s ease;
+      }
+
+      .value-card:hover .value-icon {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+      }
+
+      .value-card h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: #1f2937;
+        font-weight: 700;
+      }
+
+      .value-card p {
+        color: #6b7280;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+    </style>
   </section>
 
   <!-- Team -->
@@ -105,44 +189,88 @@
       </div>
       <div class="team-grid">
         <div class="team-member">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
-          <h3>John Smith</h3>
-          <p>CEO & Founder</p>
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766938351/image_kspnnx.jpg" alt="Adhilakshmi">
+          <h3>Adhilakshmi</h3>
+          <p>Created Home page</p>
           <div class="team-social">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/adhilakshmi-l-708b43331">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://github.com/Adhilakshmi2007">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#181717"
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
           </div>
         </div>
         <div class="team-member">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
-          <h3>Sarah Johnson</h3>
-          <p>Chief Technology Officer</p>
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766943706/bow_new_b1gvyo.jpg" alt="Bowmiga">
+          <h3>Bowmiga</h3>
+          <p>Created Portfolio page</p>
           <div class="team-social">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/bowmiga-r-a8b523389?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://github.com/BowmigaDurai">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#181717"
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
           </div>
         </div>
         <div class="team-member">
-          <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Michael Chen">
-          <h3>Michael Chen</h3>
-          <p>Creative Director</p>
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766944274/prithviclg_y3gdd0.jpg" alt="Prithvi">
+          <h3>Prithvi</h3>
+          <p>Created Service page</p>
           <div class="team-social">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a
+              href="https://www.linkedin.com/in/prithvi-yogeswaraa-m-24b109332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://github.com/prithviyogeswaraaa">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#181717"
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
           </div>
         </div>
         <div class="team-member">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
-          <h3>Emily Rodriguez</h3>
-          <p>Head of Strategy</p>
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766943849/keer_bg_y0qqaa.jpg" alt="keerthana">
+          <h3>keerthana</h3>
+          <p>Created About page</p>
           <div class="team-social">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/keerthanaT07/241801123-DAA">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://github.com/keerthanaT07/241801123-DAA">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#181717"
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
+
 
   <!-- Stats Section -->
   <section class="stats-section">
@@ -169,15 +297,119 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="cta-section">
+  <section id="ctaSection" class="cta-section">
+    <div class="cta-bg cta-bg-1"></div>
+    <div class="cta-bg cta-bg-2"></div>
+    <div class="cta-overlay"></div>
+
     <div class="container">
       <div class="cta-content">
         <h2>Join Our Team</h2>
-        <p>We're always looking for talented individuals to join our growing team</p>
+        <p>We're always looking for talented individuals to join our growing team.</p>
         <a href="contact.html" class="btn btn-light btn-lg">View Careers</a>
       </div>
     </div>
+
+    <style>
+      .cta-section {
+        position: relative;
+        padding: 3rem 0;
+        color: #ffffff;
+        overflow: hidden;
+      }
+
+      .cta-section .cta-bg {
+        position: absolute;
+        inset: 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .cta-section .cta-bg.active {
+        opacity: 1;
+      }
+
+      .cta-section .cta-bg.zoom {
+        animation: slowZoomOut 15s ease-in-out forwards;
+      }
+
+      @keyframes slowZoomOut {
+        0% {
+          transform: scale(1.2);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .cta-section .cta-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+        z-index: 1;
+      }
+
+      .cta-section .cta-content {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+      }
+    </style>
+
+    <script>
+      (function () {
+        const images = [
+          "https://res.cloudinary.com/df5x3lwf5/image/upload/v1766850710/Inspiring_Meeting_in_a_Stylish_Office_mvc4hl.jpg",
+          "https://res.cloudinary.com/df5x3lwf5/image/upload/v1767188307/Vector_circle_tech_with_light_blue_and_lamp_bulb_on_technology_background____Premium_Vector_sec5hw.jpg",
+          "https://res.cloudinary.com/df5x3lwf5/image/upload/v1766850799/Download_The_business_people_are_meeting_in_the_conference_room_with___for_free_1_n8skzv.jpg"
+        ];
+
+        const bg1 = document.querySelector("#ctaSection .cta-bg-1");
+        const bg2 = document.querySelector("#ctaSection .cta-bg-2");
+
+        if (!bg1 || !bg2) return;
+
+        let index = 0;
+        let currentBg = bg1;
+        let nextBg = bg2;
+
+        function showImage(i) {
+          // Set the next background image
+          nextBg.style.backgroundImage = "url('" + images[i] + "')";
+          nextBg.classList.add("zoom");
+          nextBg.classList.add("active");
+
+          // Fade out the current background
+          currentBg.classList.remove("active");
+
+          // After transition completes, swap references and remove zoom from old bg
+          setTimeout(function () {
+            currentBg.classList.remove("zoom");
+            const temp = currentBg;
+            currentBg = nextBg;
+            nextBg = temp;
+          }, 1000);
+        }
+
+        // Initialize first image
+        bg1.style.backgroundImage = "url('" + images[0] + "')";
+        bg1.classList.add("active");
+        bg1.classList.add("zoom");
+
+        // Change images every 5 seconds
+        setInterval(function () {
+          index = (index + 1) % images.length;
+          showImage(index);
+        }, 5000);
+      })();
+    </script>
   </section>
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -187,11 +419,32 @@
           <h3><i class="fas fa-bolt"></i> PixelPulse</h3>
           <p>Transforming ideas into digital reality through innovation and excellence.</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Adhilakshmi2007" target="_blank" title="Facebook">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#1877F2"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://github.com/Adhilakshmi2007" target="_blank" title="Twitter">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#1DA1F2"
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/adhilakshmi-l-708b43331" target="_blank" title="LinkedIn">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/l_dhanushya/" target="_blank" title="Instagram">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#E4405F"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
           </div>
+
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -205,18 +458,18 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
+            <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Careers</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><i class="fas fa-envelope"></i> info@pixelpulse.world</li>
-            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Digital Ave, Tech City</li>
+            <li><i class="fas fa-envelope"></i> adhilakshmi.l.2024.aids@rajalakshmi.edu.in</li>
+            <li><i class="fas fa-phone"></i> 7418640806</li>
+            <li><i class="fas fa-map-marker-alt"></i> Rajalakshmi nagar,Thandalam,Chennai</li>
           </ul>
         </div>
       </div>
@@ -228,4 +481,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
