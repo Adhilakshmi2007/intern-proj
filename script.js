@@ -1,3 +1,14 @@
+// HERO VIDEO - ADD THIS FIRST
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('heroVideo');
+  if (video) {
+    video.play().catch(() => { });
+    ['click', 'mousemove'].forEach(evt => {
+      document.addEventListener(evt, () => video.play(), { once: true });
+    });
+  }
+});
+
 // Mobile Navigation Toggle
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
@@ -5,7 +16,7 @@ const navMenu = document.getElementById('navMenu');
 if (navToggle) {
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-    
+
     // Animate hamburger
     const spans = navToggle.querySelectorAll('span');
     if (navMenu.classList.contains('active')) {
@@ -44,12 +55,12 @@ filterBtns.forEach(btn => {
     filterBtns.forEach(b => b.classList.remove('active'));
     // Add active class to clicked button
     btn.classList.add('active');
-    
+
     const filter = btn.getAttribute('data-filter');
-    
+
     portfolioItems.forEach(item => {
       const category = item.getAttribute('data-category');
-      
+
       if (filter === 'all' || category.includes(filter)) {
         item.style.display = 'block';
         setTimeout(() => {
@@ -75,7 +86,7 @@ const animateCounter = (element) => {
   const duration = 2000;
   const increment = target / (duration / 16);
   let current = 0;
-  
+
   const updateCounter = () => {
     current += increment;
     if (current < target) {
@@ -85,7 +96,7 @@ const animateCounter = (element) => {
       element.textContent = target;
     }
   };
-  
+
   updateCounter();
 };
 
@@ -99,7 +110,7 @@ if (statNumbers.length > 0) {
       }
     });
   }, { threshold: 0.5 });
-  
+
   statNumbers.forEach(stat => observer.observe(stat));
 }
 
@@ -109,16 +120,16 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     // Get form data
     const formData = new FormData(contactForm);
     const data = Object.fromEntries(formData);
-    
+
     console.log('Form submitted:', data);
-    
+
     // Show success message
     alert('Thank you for your message! We will get back to you within 24 hours.');
-    
+
     // Reset form
     contactForm.reset();
   });
@@ -147,7 +158,7 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
-  
+
   if (currentScroll > 100) {
     navbar.style.padding = '0.5rem 0';
     navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
@@ -155,6 +166,6 @@ window.addEventListener('scroll', () => {
     navbar.style.padding = '1rem 0';
     navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
   }
-  
+
   lastScroll = currentScroll;
 });
