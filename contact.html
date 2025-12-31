@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar">
@@ -31,14 +33,69 @@
   </nav>
 
   <!-- Page Header -->
+  <!-- Page Header with Carousel Background -->
   <section class="page-header">
+    <div class="carousel-background"></div>
     <div class="container">
-      <span class="badge">Get In Touch</span>
-      <h1>Contact Us</h1>
-      <p>Let's discuss your project and bring your ideas to life</p>
+      <span class="badge">What We Offer</span>
+      <h1>Our Services</h1>
+      <p style="color: black;">Comprehensive digital solutions to grow your business</p>
     </div>
   </section>
 
+  <style>
+    .page-header {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1767182664/Laptop_and_stationery_on_a_blue_background_from_a_high_angle__aohk7h.jpg');
+      animation: carouselSlide 15s infinite;
+      z-index: -1;
+    }
+
+    @keyframes carouselSlide {
+      0% {
+        background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1767182664/Laptop_and_stationery_on_a_blue_background_from_a_high_angle__aohk7h.jpg');
+        opacity: 1;
+      }
+
+      33% {
+        opacity: 1;
+      }
+
+      33.5% {
+        background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1767182693/Baixar_conceito_de_tecnologia_de_neg%C3%B3cios_gratuitamente_crafiy.jpg');
+        opacity: 1;
+      }
+
+      66% {
+        opacity: 1;
+      }
+
+      66.5% {
+        background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1767182679/Digital_Marketing_Evolution_cuvzkv.jpg');
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .page-header .container {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
   <!-- Contact Section -->
   <section class="section">
     <div class="container">
@@ -46,7 +103,7 @@
         <div class="contact-info">
           <h2>Let's Connect</h2>
           <p>We'd love to hear about your project. Fill out the form and we'll get back to you within 24 hours.</p>
-          
+
           <div class="contact-details">
             <div class="contact-detail-item">
               <div class="contact-icon">
@@ -54,8 +111,8 @@
               </div>
               <div>
                 <h4>Email</h4>
-                <p>info@pixelpulse.world</p>
-                <p>support@pixelpulse.world</p>
+                <p>pixelpulse.media12345@gmail.com</p>
+                <p>adhi08062007@gmail.com</p>
               </div>
             </div>
             <div class="contact-detail-item">
@@ -64,8 +121,8 @@
               </div>
               <div>
                 <h4>Phone</h4>
-                <p>+1 (555) 123-4567</p>
-                <p>+1 (555) 987-6543</p>
+                <p>+91 7418640806</p>
+                <p>+91 9790557843</p>
               </div>
             </div>
             <div class="contact-detail-item">
@@ -74,8 +131,8 @@
               </div>
               <div>
                 <h4>Office</h4>
-                <p>123 Digital Avenue</p>
-                <p>Tech City, TC 12345</p>
+                <p>Rajalakshmi Nagar</p>
+                <p>Thandalam, Chennai</p>
               </div>
             </div>
             <div class="contact-detail-item">
@@ -91,11 +148,11 @@
           </div>
 
           <div class="social-links-large">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Adhilakshmi2007"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/Adhilakshmi2007"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/adhilakshmi-l-708b43331"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/l_dhanushya/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Adhilakshmi2007"><i class="fab fa-github"></i></a>
           </div>
         </div>
 
@@ -147,28 +204,31 @@
             </div>
             <div class="form-group">
               <label for="message">Project Details *</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+              <textarea id="message" name="message" rows="5" required
+                placeholder="Tell us about your project..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+            <a href="mailto:adhilakshmi.l.2024.aids@rajalakshmi.edu.in">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+            </a>
           </form>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Map Section -->
-  <section class="map-section">
-    <div class="map-placeholder">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0194909093384!2d-122.41941568468208!3d37.77492927975952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1635180000000!5m2!1sen!2sus" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
+  <section class="cta-section"
+    style="background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1767184721/Thank_you_card_collage_concept___Premium_Photo_yeor3e.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="container">
+      <div class="cta-content">
+        <br>
+        <h2></h2>
+        <br>
+        <p></p>
+        <br>
+        <a href="contact.html" class="btn btn-light btn-lg">Get in Touch</a>
+      </div>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -178,11 +238,32 @@
           <h3><i class="fas fa-bolt"></i> PixelPulse</h3>
           <p>Transforming ideas into digital reality through innovation and excellence.</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Adhilakshmi2007" target="_blank" title="Facebook">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#1877F2"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://github.com/Adhilakshmi2007" target="_blank" title="Twitter">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#1DA1F2"
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/adhilakshmi-l-708b43331" target="_blank" title="LinkedIn">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/l_dhanushya/" target="_blank" title="Instagram">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#E4405F"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
           </div>
+
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -196,18 +277,18 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
+            <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Careers</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><i class="fas fa-envelope"></i> info@pixelpulse.world</li>
-            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Digital Ave, Tech City</li>
+            <li><i class="fas fa-envelope"></i> adhilakshmi.l.2024.aids@rajalakshmi.edu.in</li>
+            <li><i class="fas fa-phone"></i> 7418640806</li>
+            <li><i class="fas fa-map-marker-alt"></i> Rajalakshmi nagar,Thandalam,Chennai</li>
           </ul>
         </div>
       </div>
@@ -219,4 +300,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
