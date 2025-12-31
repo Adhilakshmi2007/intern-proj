@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+  <style>
+    .service-detail-image img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-detail-image img:hover {
+      transform: scale(1.1) translateY(-10px);
+      /* enlarge + move upward */
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      /* shadow makes it look lifted */
+      z-index: 10;
+      /* ensures it comes in front of nearby elements */
+      position: relative;
+      /* required for z-index to work */
+    }
+  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - PixelPulse</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar">
@@ -30,14 +49,69 @@
     </div>
   </nav>
 
-  <!-- Page Header -->
+  <!-- Page Header with Carousel Background -->
   <section class="page-header">
+    <div class="carousel-background"></div>
     <div class="container">
       <span class="badge">What We Offer</span>
       <h1>Our Services</h1>
-      <p>Comprehensive digital solutions to grow your business</p>
+      <p style="color: black;">Comprehensive digital solutions to grow your business</p>
     </div>
   </section>
+
+  <style>
+    .page-header {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1766910712/download_2_ybvhk0.jpg');
+      animation: carouselSlide 15s infinite;
+      z-index: -1;
+    }
+
+    @keyframes carouselSlide {
+      0% {
+        background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1766910712/download_2_ybvhk0.jpg');
+        opacity: 1;
+      }
+
+      33% {
+        opacity: 1;
+      }
+
+      33.5% {
+        background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1766910698/Success_is_the_ability_to_go_from_failure_to_failure_without_losing_your_enthusiasm_Sir_Winston_Churchill_leadership_j6qmbp.jpg');
+        opacity: 1;
+      }
+
+      66% {
+        opacity: 1;
+      }
+
+      66.5% {
+        background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1766910668/download_1_ftlngq.jpg');
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .page-header .container {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 
   <!-- Services Detail -->
   <section class="section">
@@ -48,7 +122,8 @@
             <i class="fas fa-code"></i>
           </div>
           <h2>Website Development</h2>
-          <p>Our web development team performs functional analysis, feasibility assessments, data flow optimization, and system architecture design to build scalable, high-performance websites that drive business growth.</p>
+          <p>Our web development team performs functional analysis, feasibility assessments, data flow optimization, and
+            system architecture design to build scalable, high-performance websites that drive business growth.</p>
           <ul class="features-list">
             <li><i class="fas fa-check"></i> Responsive Design</li>
             <li><i class="fas fa-check"></i> Custom CMS Integration</li>
@@ -59,7 +134,9 @@
           </ul>
         </div>
         <div class="service-detail-image">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=500&fit=crop" alt="Website Development">
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766849052/webcr.jpg_ktdoq3.jpg"
+            alt="Website Development">
+
         </div>
       </div>
 
@@ -69,7 +146,8 @@
             <i class="fas fa-shopping-cart"></i>
           </div>
           <h2>E-Commerce Development</h2>
-          <p>Showcase your products with rich descriptions, premium images, and seamless search functionality through our expert eCommerce website design services.</p>
+          <p>Showcase your products with rich descriptions, premium images, and seamless search functionality through
+            our expert eCommerce website design services.</p>
           <ul class="features-list">
             <li><i class="fas fa-check"></i> Payment Gateway Integration</li>
             <li><i class="fas fa-check"></i> Inventory Management</li>
@@ -80,7 +158,7 @@
           </ul>
         </div>
         <div class="service-detail-image">
-          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&h=500&fit=crop" alt="E-Commerce">
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766851525/ec.jpg_jxwqkg.jpg" alt="E-Commerce">
         </div>
       </div>
 
@@ -90,7 +168,8 @@
             <i class="fas fa-robot"></i>
           </div>
           <h2>AI Integration</h2>
-          <p>AI in web development to automate design processes, improve user experiences, boost performance, and expedite development, guaranteeing smarter digital solutions.</p>
+          <p>AI in web development to automate design processes, improve user experiences, boost performance, and
+            expedite development, guaranteeing smarter digital solutions.</p>
           <ul class="features-list">
             <li><i class="fas fa-check"></i> Chatbot Development</li>
             <li><i class="fas fa-check"></i> Recommendation Engines</li>
@@ -101,7 +180,8 @@
           </ul>
         </div>
         <div class="service-detail-image">
-          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&h=500&fit=crop" alt="AI Integration">
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766851627/ai.jpg_hgldkc.jpg"
+            alt="AI Integration">
         </div>
       </div>
 
@@ -111,7 +191,8 @@
             <i class="fas fa-mobile-alt"></i>
           </div>
           <h2>Mobile App Development</h2>
-          <p>Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android devices.</p>
+          <p>Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android
+            devices.</p>
           <ul class="features-list">
             <li><i class="fas fa-check"></i> iOS Development</li>
             <li><i class="fas fa-check"></i> Android Development</li>
@@ -122,7 +203,8 @@
           </ul>
         </div>
         <div class="service-detail-image">
-          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=500&fit=crop" alt="Mobile Apps">
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766851764/maup.jpg_etz8dw.jpg"
+            alt="Mobile Apps">
         </div>
       </div>
 
@@ -132,7 +214,8 @@
             <i class="fas fa-search"></i>
           </div>
           <h2>SEO & Digital Marketing</h2>
-          <p>Data-driven strategies to increase your online visibility, drive qualified traffic, and maximize ROI across all digital channels.</p>
+          <p>Data-driven strategies to increase your online visibility, drive qualified traffic, and maximize ROI across
+            all digital channels.</p>
           <ul class="features-list">
             <li><i class="fas fa-check"></i> Keyword Research & Analysis</li>
             <li><i class="fas fa-check"></i> On-Page & Off-Page SEO</li>
@@ -143,7 +226,8 @@
           </ul>
         </div>
         <div class="service-detail-image">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=500&fit=crop" alt="SEO Marketing">
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766851893/seoup.jpg_yflbfs.jpg"
+            alt="SEO Marketing">
         </div>
       </div>
 
@@ -153,7 +237,8 @@
             <i class="fas fa-palette"></i>
           </div>
           <h2>UI/UX Design</h2>
-          <p>Beautiful, intuitive interfaces backed by user research and data to create experiences that delight users and drive business results.</p>
+          <p>Beautiful, intuitive interfaces backed by user research and data to create experiences that delight users
+            and drive business results.</p>
           <ul class="features-list">
             <li><i class="fas fa-check"></i> User Research & Testing</li>
             <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
@@ -164,14 +249,16 @@
           </ul>
         </div>
         <div class="service-detail-image">
-          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=700&h=500&fit=crop" alt="UI/UX Design">
+          <img src="https://res.cloudinary.com/df5x3lwf5/image/upload/v1766851985/uinew.jpg_rjdgba.jpg"
+            alt="UI/UX Design">
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="cta-section">
+  <section class="cta-section"
+    style="background-image: url('https://res.cloudinary.com/df5x3lwf5/image/upload/v1766910678/Digital_Brain_Illuminated_u3mbth.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="container">
       <div class="cta-content">
         <h2>Let's Build Something Amazing</h2>
@@ -189,11 +276,32 @@
           <h3><i class="fas fa-bolt"></i> PixelPulse</h3>
           <p>Transforming ideas into digital reality through innovation and excellence.</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Adhilakshmi2007" target="_blank" title="Facebook">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#1877F2"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://github.com/Adhilakshmi2007" target="_blank" title="Twitter">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#1DA1F2"
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/adhilakshmi-l-708b43331" target="_blank" title="LinkedIn">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/l_dhanushya/" target="_blank" title="Instagram">
+              <svg viewBox="0 0 24 24" class="social-icon">
+                <path fill="#E4405F"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
           </div>
+
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -207,18 +315,18 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
+            <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Careers</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><i class="fas fa-envelope"></i> info@pixelpulse.world</li>
-            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Digital Ave, Tech City</li>
+            <li><i class="fas fa-envelope"></i> adhilakshmi.l.2024.aids@rajalakshmi.edu.in</li>
+            <li><i class="fas fa-phone"></i> 7418640806</li>
+            <li><i class="fas fa-map-marker-alt"></i> Rajalakshmi nagar,Thandalam,Chennai</li>
           </ul>
         </div>
       </div>
@@ -229,5 +337,26 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".service-detail-image img");
+
+      images.forEach(img => {
+        img.addEventListener("mouseenter", () => {
+          img.style.transform = "scale(1.1) translateY(-10px)";
+          img.style.boxShadow = "0 12px 24px rgba(0,0,0,0.3)";
+          img.style.transition = "transform 0.3s ease, box-shadow 0.3s ease";
+          img.style.position = "relative";
+          img.style.zIndex = "10";
+        });
+        img.addEventListener("mouseleave", () => {
+          img.style.transform = "scale(1) translateY(0)";
+          img.style.boxShadow = "none";
+          img.style.zIndex = "1";
+        });
+      });
+    });
+  </script>
 </body>
+
 </html>
